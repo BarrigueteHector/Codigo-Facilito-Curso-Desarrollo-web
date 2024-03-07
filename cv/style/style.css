@@ -1,0 +1,89 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+    font-family: "Arial", sans-serif;
+    
+    background-color: #f8f8ff;/* Quitar los margenes por defecto */
+    margin: 0;
+}
+
+header{
+    /* Alinear el texto al centro */
+   text-align: center;
+
+   background-color: #6783F0;
+}
+
+header h1{
+    margin-right: 15%;
+}
+
+header h2{
+    font-weight: 200;
+}
+
+/* Para un id */
+#name-status{
+    /* Mostrar en la misma linea */
+    display: inline-block; 
+    text-align: center;
+}
+
+/* Para un div */
+.specialization-field{
+    /* Alinear el texto al centro */
+    text-align: center;
+    padding: 5px;
+    background-color: #67AEF0;  
+}
+
+.info{
+    margin-top: 30px;
+    padding: 25px 30px;
+    background-color:#f8f8ff;
+
+    border-radius: 3%;
+    
+    /* Ajustar el ancho */
+    width: 50%;
+
+    /* Centrar el div */
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.info h3{
+    font-size: 25px;
+}
+
+.container-list{
+    padding-bottom: 25px;
+}
+
+.container-list h3{
+    margin: 0 0;
+    }
+
+.list-item{
+    margin: 15px 0px;
+}
+
+.list-item dd{
+    margin-top: 5px ;
+}
+
+.container-list ul li{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.container-list ul li a{
+    color: black;
+    text-decoration: none;
+}
