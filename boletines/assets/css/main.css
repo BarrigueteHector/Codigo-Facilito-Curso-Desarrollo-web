@@ -16,3 +16,13 @@ header h1 a{
     color: white;
     text-decoration: none;
 }
+
+table tr td a{
+    text-decoration: none;
+    color: black;
+}
+
+table tr td a img{
+    width: 30px;
+    height: 20px;
+}
