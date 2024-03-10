@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f8f8ff;
+}
+
+header{
+    background-color: #013369;
+    padding: 1px;
+    text-align: center;
+}
+
+header h1 a{
+    color: white;
+    text-decoration: none;
+}
