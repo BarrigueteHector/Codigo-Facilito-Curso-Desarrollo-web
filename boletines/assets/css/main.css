@@ -1,4 +1,4 @@
-*{
+html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,13 +8,33 @@ body{
 
 header{
     background-color: #013369;
-    padding: 1px;
     text-align: center;
 }
 
-header h1 a{
-    color: white;
-    text-decoration: none;
+header img{
+    width: 70px;
+    height: 105px;
+    padding: 10px;
+}
+
+.title{
+    /* Convierte el texto en mayusculas */
+    text-transform: uppercase;
+}
+
+.container{
+    /* Uso de flexbox */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 950px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 table tr td a{
@@ -25,4 +45,18 @@ table tr td a{
 table tr td a img{
     width: 30px;
     height: 20px;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #B8E1FF;
 }
