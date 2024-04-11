@@ -147,3 +147,46 @@ nav a{
     text-decoration: none;
     color: #f8f8ff;
 }
+
+.container-draft{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.content-draft{
+    max-width: 950px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+
+    background-color: #f8f8ff;
+    color: black;
+    border-radius: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-number{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.time-number p, #days, #hours, #minutes{
+    font-size: 40px;
+}
+
+.days, .hours, .minutes{
+    padding: 20px;
+    
+    text-align: center;
+}
+
+.days h3, .hours h3, .minutes h3{
+    margin: 0;
+    margin-bottom: 10px;
+}
