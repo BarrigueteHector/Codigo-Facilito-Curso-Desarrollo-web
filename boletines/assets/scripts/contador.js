@@ -17,17 +17,20 @@ var countdownFunction = setInterval(function() {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Muestra el resultado en los elementos con id="days", id="hours" y id="minutes"
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
 
     // Si la cuenta atrás ha terminado, escribe algún texto 
     if (distance < 0) {
         clearInterval(countdownFunction);
         document.getElementById("days").innerHTML = "--";
         document.getElementById("hours").innerHTML = "--";
-        document.getElementById("minutes").innerHTML = "--s";
+        document.getElementById("minutes").innerHTML = "--";
+        document.getElementById("seconds").innerHTML = "--";
     }
 }, 1000);

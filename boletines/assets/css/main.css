@@ -90,7 +90,7 @@ p{
     text-decoration: none;
 }
 
-.icon-home span{
+.icon-home i{
     color: #f8f8ff;
     position: relative;
     padding: 20px;
@@ -176,17 +176,17 @@ nav a{
     padding-bottom: 20px;
 }
 
-.time-number p, #days, #hours, #minutes{
+.time-number p, #days, #hours, #minutes, #seconds{
     font-size: 40px;
 }
 
-.days, .hours, .minutes{
+.days, .hours, .minutes, .seconds{
     padding: 20px;
     
     text-align: center;
 }
 
-.days h3, .hours h3, .minutes h3{
+.days h3, .hours h3, .minutes h3, .seconds h3{  
     margin: 0;
     margin-bottom: 10px;
 }
