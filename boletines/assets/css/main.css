@@ -190,3 +190,95 @@ nav a{
     margin: 0;
     margin-bottom: 10px;
 }
+
+/* CALENDAR */
+
+.container-acordeon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-acordeon{
+    max-width: 450px;
+    max-height: 800px;
+    width: 30%;
+    height: 30%;
+
+    background-color: #f8f8ff;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.container-week{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+}
+
+.container-week:hover{
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.expand-more{
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.expand-more:hover{
+    color: red;
+}
+
+.juegos{
+    margin: 0;
+    padding: 0;
+    
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.juegos li{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.activo{
+    border-radius: 10px;
+    background-color: #dddddd;
+}
+
+.activo .juegos{
+    height: auto;
+    overflow: none;
+    transition: 0.5s;
+}
+
+/* .container-week{
+    position: relative;
+}
+
+.label{
+    position: relative;
+    cursor: pointer;
+}
+
+.juegos{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container-week.activa .label:before{
+    content: "▲";
+
+} */
