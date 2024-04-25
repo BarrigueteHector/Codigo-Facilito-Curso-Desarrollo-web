@@ -201,7 +201,7 @@ nav a{
 
 .content-acordeon{
     max-width: 450px;
-    max-height: 800px;
+    max-height: auto;
     width: 30%;
     height: 30%;
 
@@ -234,6 +234,8 @@ nav a{
 
 .expand-more:hover{
     color: red;
+    /* Animación para el giro */
+    transition: transform 0.5s ease;
 }
 
 .juegos{
@@ -243,6 +245,8 @@ nav a{
     position: relative;
     height: 0;
     overflow: hidden;
+    /* Transición al ocultar */
+    transition: all 0.8s ease;
 }
 
 .juegos li{
@@ -257,28 +261,33 @@ nav a{
 }
 
 .activo .juegos{
-    height: auto;
+    height: 835px;
     overflow: none;
-    transition: 0.5s;
+    /* Transición al mostrar */
+    transition: all 0.8s ease; 
+    /* La transición solo aplica si height no es auto */
 }
 
-/* .container-week{
-    position: relative;
+.activo .expand-more{
+    color: red;
+    /* Giro de 180 grados */
+    transform: rotate(180deg);
 }
 
-.label{
-    position: relative;
-    cursor: pointer;
+.juegos p{
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
 }
 
-.juegos{
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
+.team-matchup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-week.activa .label:before{
-    content: "▲";
-
-} */
+.logo-team{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+}
