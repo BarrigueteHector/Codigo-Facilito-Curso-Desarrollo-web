@@ -200,7 +200,7 @@ nav a{
 }
 
 .content-acordeon{
-    max-width: 450px;
+    max-width: 400px;
     max-height: auto;
     width: 30%;
     height: 30%;
@@ -220,6 +220,11 @@ nav a{
 .label{
     display: flex;
     align-items: center;
+}
+
+.week{
+    font-weight: bold;
+    margin: 5px 0px 5px 5px;
 }
 
 .container-week:hover{
@@ -286,8 +291,6 @@ nav a{
     align-items: center;
 }
 
-.logo-team{
-    width: 40px;
-    height: 40px;
-    margin: 0px 10px;
+.teams-bye{
+    font-weight: bold;
 }
