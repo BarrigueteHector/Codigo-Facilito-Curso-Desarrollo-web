@@ -15,6 +15,31 @@ body{
   'opsz' 24
 }
 
+/************ Barra de navegación ************/
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 10px;
+
+    /* Bloquear la barra de navegación */
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; Esto asegura que la barra de navegación esté por encima de otros contenidos */
+}
+
+nav a{
+    text-decoration: none;
+    color: #f8f8ff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+/************ Index ************/
 .title{
     /* Convierte el texto en mayusculas */
     text-transform: uppercase;
@@ -76,90 +101,21 @@ table tr td a img{
     background-color: #B8E1FF;
 }
 
-/* Centrar el logo*/
-.logo{
-    display: flex;
-    justify-content: center;
-}
-
-p{
-    text-align: justify;
-}
-
-.icon-home a{
-    text-decoration: none;
-}
-
-.icon-home i{
-    color: #f8f8ff;
-    position: relative;
-    padding: 20px;
-    top: 10px;
-    right: 20px;
-    display: flex;
-    justify-content: end;
-}
-
-.img-stadium{
-    width: 100%;
-    height: 50%;
-
-    padding-bottom: 40px;
-}
-
-h2{
-    text-align: center;
-    font-size: 40px;
-}
-
-.text{
-    text-align: center;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    background-color: red;
-    padding: 10px;
-}
-
-nav a{
-    text-decoration: none;
-    color: #f8f8ff;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: bold;
-    margin: 0 20px;
-}
-
-.container-r{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.content-r{
-    color: black;
-}
-
-.content-r p, .content-r p a{
+/************ RANKING ************/
+.reference a{
     text-decoration: none;
     color: #f8f8ff;
 }
 
-.container-draft{
+/************ SEASON ************/
+
+.container-season{
     display: flex;
     align-items: center;
     justify-content: center;   
 }
 
-.content-draft{
-    max-width: 950px;
-    max-height: 800px;
-    width: 100%;
-    height: 100%;
-
+.content-season{
     background-color: #f8f8ff;
     color: black;
     border-radius: 10px;
@@ -191,14 +147,7 @@ nav a{
     margin-bottom: 10px;
 }
 
-/* CALENDAR */
-
-.container-acordeon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/************ CALENDAR ************/
 .content-acordeon{
     max-width: 400px;
     max-height: auto;
@@ -217,6 +166,11 @@ nav a{
     margin-bottom: 10px;
 }
 
+.container-week:hover{
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
 .label{
     display: flex;
     align-items: center;
@@ -225,11 +179,6 @@ nav a{
 .week{
     font-weight: bold;
     margin: 5px 0px 5px 5px;
-}
-
-.container-week:hover{
-    background-color: #dddddd;
-    border-radius: 10px;
 }
 
 .expand-more{
@@ -241,23 +190,6 @@ nav a{
     color: red;
     /* Animación para el giro */
     transition: transform 0.5s ease;
-}
-
-.juegos{
-    margin: 0;
-    padding: 0;
-    
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    /* Transición al ocultar */
-    transition: all 0.8s ease;
-}
-
-.juegos li{
-    list-style: none;
-    padding: 10px;
-    text-align: center;
 }
 
 .activo{
@@ -279,18 +211,71 @@ nav a{
     transform: rotate(180deg);
 }
 
+.juegos{
+    margin: 0;
+    padding: 0;
+    
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    /* Transición al ocultar */
+    transition: all 0.8s ease;
+}
+
+.juegos li{
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
 .juegos p{
     margin: 0;
     text-align: center;
     font-size: 12px;
 }
 
-.team-matchup{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .teams-bye{
     font-weight: bold;
+}
+
+/******** Páginas carpeta Teams ********/
+/* Centrar el logo*/
+.team-name-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 20px 0px;
+}
+
+.team-info{
+    text-align: justify;
+    margin: 30px 0px;
+}
+
+.team-img-stadium{
+    width: 100%;
+    height: 50%;
+
+    margin-bottom: 40px;
+}
+
+.text{
+    text-align: center;
+}
+
+.container-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    margin: 20px;
+}
+
+.content-team{
+    max-width: 950px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
 }
