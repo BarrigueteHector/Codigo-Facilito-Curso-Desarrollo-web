@@ -74,6 +74,15 @@ nav a{
     text-align: center;
 }
 
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.cwb{
+    animation: fadeIn 2s ease-in-out;
+}
+
 table tr td a{
     text-decoration: none;
     color: black;
